@@ -8,6 +8,7 @@ else
 fi
 
 # Do not change code above this line. Use the PSQL variable above to query your database.
+
 REFERESH=$($PSQL "TRUNCATE TABLE teams, games")
 
 cat games.csv | while IFS="," read year round winner opponent winner_goals opponent_goals
